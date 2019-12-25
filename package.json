@@ -1,0 +1,30 @@
+{
+  "name": "joyp",
+  "version": "0.1.0",
+  "description": "Poll the state of the joypads.",
+  "license": "MIT",
+  "keywords": [
+    "joypad",
+    "joypads",
+    "gamepad",
+    "gamepads",
+    "controller",
+    "xbox",
+    "gamedev",
+    "game development",
+    "poll",
+    "input",
+    "browser"
+  ],
+  "contributors": [
+    "Andrew McPherson <@ehgoodenough>"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ehgoodenough/joyp"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "afloop": "^1.0.2"
+  }
+}
