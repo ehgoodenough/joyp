@@ -79,11 +79,11 @@ const Joyp = {
         }
     },
     "vibrate": function(gamepadIndex, options) {
-        options = options || {
-            "duration": 100,
-            "weakMagnitude": 0.5,
-            "strongMagnitude": 0.5,
-        }
+        options = options || {}
+        options.startDelay = 0
+        options.duration = options.duration || 100
+        options.weakMagnitude = options.weakMagnitude || 0.5
+        options.strongMagnitude = options.strongMagnitude || 0.5
         const gamepad = this.references[gamepadIndex] || {}
         if(gamepad.vibrationActuator instanceof GamepadHapticActuator) {
             gamepad.vibrationActuator.playEffect("dual-rumble", options)
