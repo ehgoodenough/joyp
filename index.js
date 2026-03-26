@@ -94,7 +94,7 @@ const Joyp = {
 }
 
 afloop(function() {
-    const gamepads = navigator.getGamepads()
+    const gamepads = window.navigator.getGamepads()
 
     for(let gamepadIndex = 0; gamepadIndex < gamepads.length; gamepadIndex += 1) {
         const gamepad = gamepads[gamepadIndex]
